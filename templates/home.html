@@ -1,0 +1,97 @@
+{% extends "layout/base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block body %}
+    <div class="row">
+        <div class="col s6">
+            <div class="card">
+                <div class="card-content">
+                    <form id="imageForm" enctype="multipart/form-data" action="" method="post">
+                        <div class="file-field input-field">
+                            <div class="btn {{ cssClass }} waves-effect">
+                                <span>Image</span>
+                                <input type="file" name="ImageFile" id="ImageFile">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text">
+                            </div>
+                        </div>
+                        <button id="imgSend" class="btn {{ cssClass }} waves-effect">
+                            Send <i class="material-icons right">send</i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card">
+                <div class="row">
+                    <div class="col s6 offset-s5">
+                        <div class="loader" style="padding: 30px">
+                            <div class="preloader-wrapper big active">
+                                <div class="spinner-layer spinner-blue">
+                                    <div class="circle-clipper left">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="gap-patch">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="circle-clipper right">
+                                        <div class="circle"></div>
+                                    </div>
+                                </div>
+
+                                <div class="spinner-layer spinner-red">
+                                    <div class="circle-clipper left">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="gap-patch">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="circle-clipper right">
+                                        <div class="circle"></div>
+                                    </div>
+                                </div>
+
+                                <div class="spinner-layer spinner-yellow">
+                                    <div class="circle-clipper left">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="gap-patch">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="circle-clipper right">
+                                        <div class="circle"></div>
+                                    </div>
+                                </div>
+
+                                <div class="spinner-layer spinner-green">
+                                    <div class="circle-clipper left">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="gap-patch">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="circle-clipper right">
+                                        <div class="circle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ImageData">
+                    <div class="card-image">
+
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title">How Beautiful you are??</div>
+                        <div class="meater center-align">
+                            <h1 id="beautyPercentage"></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

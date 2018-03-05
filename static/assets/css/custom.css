@@ -1,0 +1,16 @@
+.card-image{
+    position: relative;
+}
+.frame{
+    border: 4px solid #2ecc71;
+    position: absolute;
+    display: none;
+}
+.loader{
+    display: none;
+}
+
+.ImageData{
+    display: none;
+}
+/*top: 320, left: 1227, width: 410, height: 410*/
